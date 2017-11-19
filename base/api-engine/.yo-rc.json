@@ -1,0 +1,25 @@
+{
+    "generator-node-express-mongo-mqtt":
+    {
+        "insertRoutes": true,
+        "registerRoutesFile": "server/routes.js",
+        "routesNeedle": "// Insert routes below",
+        "insertSeed": true,
+        "registerSeedFile": "server/config/seed.js",
+        "seedModelNeedle": "// Insert seed models below",
+        "seedDataNeedle": "// Insert seed data below",
+        "seedInsertNeedle": "// Insert seed inserts below",
+        "routesBase": "/api/",
+        "pluralizeRoutes": true,
+        "insertSockets": true,
+        "registerSocketsFile": "server/config/socketio.js",
+        "socketsNeedle": "// Insert sockets below",
+        "filters":
+        {
+            "socketio": true,
+            "mqtt": true,
+            "mongoose": true,
+            "auth": true
+        }
+    }
+}
