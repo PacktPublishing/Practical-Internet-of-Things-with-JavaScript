@@ -1,0 +1,19 @@
+<div class="container">
+    <br>
+    <button class="btn btn-info pull-right" (click)="addDevice()"> <span class="glyphicon btn-glyphicon glyphicon-plus img-circle"></span>&nbsp;&nbsp;&nbsp;Add Device</button>
+    <div class="clearfix"></div>
+    <br>
+</div>
+<div *ngIf="!devices">
+    <h3 class="text-center">Loading!</h3>
+</div>
+<div *ngIf="devices && devices.length === 0">
+    <h3 class="text-center">No Devices</h3>
+</div>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let dev of devices">
+            <app-device-template [device]="dev" (deleteDevice)="deleteDevice($event)" (viewDevice)="viewDevice($event)"></app-device-template>
+        </div>
+    </div>
+</div>

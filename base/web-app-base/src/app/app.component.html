@@ -1,0 +1,5 @@
+<app-nav-bar></app-nav-bar>
+<router-outlet>
+	<div *ngIf="showLoader" class="loading"></div >
+	<simple-notifications [options]="notfiOptions"></simple-notifications>
+</router-outlet>
