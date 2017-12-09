@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "https://bootswatch.com/cosmo/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cosmo/bootstrap.css";
 
 body {
   padding-top: 50px;
