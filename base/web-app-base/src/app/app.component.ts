@@ -41,10 +41,16 @@ export class AppComponent {
 		router.events.subscribe((event: RouterEvent) => {
 			this._navigationInterceptor(event);
 		});
-
-		this.loader.status.subscribe((val: boolean) => {
-			this.showLoader = val;
-		});
+	}
+  
+  ngAfterViewInit() {
+		setTimeout(() => {
+			this.loader.status
+				.subscribe((val: boolean) => {
+					console.log('called', val);
+					this.showLoader = val;
+				});
+		}, 1000);
 	}
 
 	// Shows and hides the loading spinner during RouterEvent changes
