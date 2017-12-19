@@ -1,4 +1,4 @@
-# Advanced IoT with JavaScript
+# Practical Internet of Things with JavaScript
 This is the code repository for [Advanced IoT with JavaScript](https://www.packtpub.com/hardware-and-creative/advanced-iot-javascript?utm_source=repository&utm_medium=github&utm_campaign=repository&utm_term=9781788292948), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 
 ## About the Book
