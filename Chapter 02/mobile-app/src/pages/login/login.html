@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Mobile App</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label fixed>Email</ion-label>
+            <ion-input type="email" value="" [(ngModel)]="user.email" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+        </ion-item>
+        <div padding>
+            <button ion-button full  [disabled]="!user.email || !user.password" (click)="login()">Login</button>
+        </div>
+    </ion-list>
+</ion-content>

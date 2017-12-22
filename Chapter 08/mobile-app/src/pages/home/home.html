@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-navbar>
+        <ion-buttons start>
+            <button ion-button icon-only (click)="addDevice()">
+                <ion-icon name="add"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>
+            Mobile App
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="logout()">
+                <ion-icon name="power"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-card *ngIf="!devices">
+        <ion-card-content>
+            <h3 class="text-center">Loading..</h3>
+        </ion-card-content>
+    </ion-card>
+    <div *ngIf="devices">
+        <ion-card *ngIf="devices.length === 0">
+            <ion-card-content>
+                <h3 class="text-center">No Devices</h3>
+            </ion-card-content>
+        </ion-card>
+        <div *ngIf="devices.length > 0">
+            <ion-card *ngFor="let device of devices">
+                <ion-card-content>
+                    <h3>Device Name : {{device.name}}</h3>
+                    <p>Mac Address : {{device.macAddress}}</p>
+                    <label>Created At : {{device.createdAt | date:'medium'}}</label>
+                </ion-card-content>
+                <ion-row>
+                    <ion-col>
+                        <button ion-button icon-left clear small (click)="viewDevice(device)">
+                            <ion-icon name="eye"></ion-icon>
+                            <div>View Device</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button ion-button icon-left clear small color="danger" (click)="deleteDevice(device)">
+                            <ion-icon name="trash"></ion-icon>
+                            <div>Delete Device</div>
+                        </button>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </div>
+    </div>
+</ion-content>

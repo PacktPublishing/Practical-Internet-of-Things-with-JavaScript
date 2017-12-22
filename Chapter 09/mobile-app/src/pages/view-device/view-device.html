@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Mobile App</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div *ngIf="!lastRecord">
+        <h3 class="text-center">Loading!</h3>
+    </div>
+    <div *ngIf="lastRecord">
+        <ion-list>
+            <ion-item>
+                <img [src]="lastRecord.data.fname">
+            </ion-item>
+            <ion-item>
+                <ion-label>Received At</ion-label>
+                <ion-label>{{lastRecord.createdAt | date: 'medium'}}</ion-label>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Mobile App</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div *ngIf="!lastRecord">
+        <h3 class="text-center">Loading!</h3>
+    </div>
+    <div *ngIf="lastRecord">
+        <ion-list>
+            <ion-item>
+                <ion-label>Name</ion-label>
+                <ion-label>{{device.name}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>X-Axis</ion-label>
+                <ion-label>{{lastRecord.data.acclVals.x}} {{lastRecord.data.acclVals.units}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Y-Axis</ion-label>
+                <ion-label>{{lastRecord.data.acclVals.y}} {{lastRecord.data.acclVals.units}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Z-Axis</ion-label>
+                <ion-label>{{lastRecord.data.acclVals.z}} {{lastRecord.data.acclVals.units}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Location</ion-label>
+                <ion-label>{{lastRecord.data.location.city}}, {{lastRecord.data.location.region}}, {{lastRecord.data.location.country}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Received At</ion-label>
+                <ion-label>{{lastRecord.createdAt | date: 'medium'}}</ion-label>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

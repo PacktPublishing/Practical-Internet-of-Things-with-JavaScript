@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Mobile App</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+    	<ion-item>
+            <ion-label fixed>Name</ion-label>
+            <ion-input type="text" [(ngModel)]="device.name" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label fixed>Mac Address</ion-label>
+            <ion-input type="text" value="" [(ngModel)]="device.macAddress" required></ion-input>
+        </ion-item>
+        <div padding>
+            <button ion-button full [disabled]="!device.macAddress || !device.name" (click)="create()">Create</button>
+        </div>
+    </ion-list>
+</ion-content>

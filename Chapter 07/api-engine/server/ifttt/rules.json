@@ -1,0 +1,18 @@
+[
+{
+    "device": "b8:27:eb:39:92:0d",
+    "rules": [
+    {
+        "if":
+        {
+            "prop": "fall",
+            "cond": "eq",
+            "valu": 1
+        },
+        "then":
+        {
+            "action": "EMAIL",
+            "to": "arvind.ravulavaru@gmail.com"
+        }
+    }]
+}]

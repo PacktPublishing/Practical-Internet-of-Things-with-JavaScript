@@ -1,0 +1,17 @@
+{
+    "name": "pi-client",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": ["pi", "mqtts"],
+    "author": "Arvind Ravulavaru",
+    "private": true,
+    "license": "ISC",
+    "dependencies": {
+        "mqtt": "^2.7.1",
+        "getmac": "^1.2.1"
+    }
+}

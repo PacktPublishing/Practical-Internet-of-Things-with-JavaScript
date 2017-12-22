@@ -1,0 +1,20 @@
+<div class="col-md-12">
+    <h3 class="text-center">Add New Device</h3>
+    <div class="col-md-6 col-md-offset-3">
+        <div class="modal-content">
+            <div class="panel-body">
+                <form role="form">
+                    <fieldset>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Name" name="name" type="text" autofocus="" [(ngModel)]="device.name" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Mac Address" name="macAddress" type="text" autofocus="" [(ngModel)]="device.macAddress" required>
+                        </div>
+                        <button class="btn btn-primary btn-block" [disabled]="!device.name || !device.macAddress" (click)="create()">Create</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

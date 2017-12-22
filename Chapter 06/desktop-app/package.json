@@ -1,0 +1,42 @@
+{
+  "name": "desktop-app",
+  "productName": "DesktopApp",
+  "version": "0.0.0",
+  "description": "My stylish app",
+  "license": "MIT",
+  "repository": "arvindr21/desktop-app",
+  "author": {
+    "name": "Arvind Ravulavaru",
+    "email": "arvind.ravulavaru@gmail.com",
+    "url": "github.com/arvindr21"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^1.3.3",
+    "electron-debug": "^1.4.0",
+    "electron-packager": "^8.0.0",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
