@@ -18,7 +18,7 @@ var config = {
     collectionName: 'AIOWJS-FACES',
     region: 'eu-west-1',
     accessKeyId: 'xxxx',
-    secretAccessKey: 'xxxxx
+    secretAccessKey: 'xxxxx'
 };
 
 var AWS = require('aws-sdk');
