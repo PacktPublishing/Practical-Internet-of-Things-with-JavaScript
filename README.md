@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/practical-internet-of-things-with-javascript/9781788292948)
------
-*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # Practical Internet of Things with JavaScript
 This is the code repository for [Practical Internet of Things with JavaScript](https://www.packtpub.com/hardware-and-creative/advanced-iot-javascript?utm_source=repository&utm_medium=github&utm_campaign=repository&utm_term=9781788292948), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 
